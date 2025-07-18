@@ -1,13 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GiftCardSwap - Fast, Secure, Anonymous</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background-color: #000;
+      background-image: url('background.jpg'); /* Save your provided image as background.jpg in /public or same directory */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .start-button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      background: #00ffc3;
+      border: none;
+      color: black;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .start-button:hover {
+      background: #00bfa3;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>GiftCardSwap</h1>
+      <p>Exchange your gift cards for crypto instantly. Secure. Anonymous. Trusted by hundreds. No accounts, no hassle.</p>
+      <button class="start-button" onclick="location.href='form.html'">Start Now</button>
+    </header>
+  </div>
+</body>
 </html>
