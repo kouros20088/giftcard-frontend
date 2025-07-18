@@ -1,20 +1,17 @@
-/* index.css */
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-}
-
 body {
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
 }
 
 a {
-  color: inherit;
+  color: #61dafb;
   text-decoration: none;
 }
 
+nav, footer {
+  background-color: rgba(0,0,0,0.6);
+  padding: 1rem;
+  text-align: center;
+}

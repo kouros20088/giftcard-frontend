@@ -1,7 +1,1 @@
-export default function SuccessPage() {
-  return (
-    <div className="text-green-400 text-center p-10">
-      ✅ Submission Successful! You’ll be contacted shortly.
-    </div>
-  );
-}
+export default function SuccessPage() { return <div><h2>Success</h2><p>Your submission was successful!</p></div>; }
