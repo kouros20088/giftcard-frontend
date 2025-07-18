@@ -1,27 +1,24 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import FormPage from './pages/FormPage';
-import SuccessPage from './pages/SuccessPage';
-import ErrorPage from './pages/ErrorPage';
 
-export default function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Form from './pages/Form';
+
+function App() {
   return (
-    <div className="app">
+    <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/form" element={<FormPage />} />
-        <Route path="/success" element={<SuccessPage />} />
-        <Route path="/error" element={<ErrorPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/form" element={<Form />} />
       </Routes>
-      <Footer />
-    </div>
+    </Router>
   );
 }
+
+export default App;
