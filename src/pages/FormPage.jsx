@@ -1,1 +1,0 @@
-export default function FormPage() { return <div><h2>Form</h2><p>Submit your gift card info securely.</p></div>; }

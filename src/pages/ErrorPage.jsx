@@ -1,1 +1,12 @@
-export default function ErrorPage() { return <div><h2>Error</h2><p>Something went wrong. Please try again.</p></div>; }
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Error = () => (
+  <div className="page">
+    <h1>❌ Oops!</h1>
+    <p>Something went wrong. Please try again later.</p>
+    <Link className="cta" to="/form">Try Again</Link>
+  </div>
+);
+
+export default Error;

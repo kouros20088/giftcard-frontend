@@ -1,1 +1,0 @@
-export default function AboutPage() { return <div><h2>About</h2><p>We convert gift cards to crypto. Fully anonymous. End-to-end encrypted. No sign-up required.</p></div>; }

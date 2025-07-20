@@ -1,1 +1,0 @@
-export default function SuccessPage() { return <div><h2>Success</h2><p>Your submission was successful!</p></div>; }
