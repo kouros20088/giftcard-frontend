@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,6 +24,8 @@ function App() {
         <Route path="/error" element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
+
+export default App;
