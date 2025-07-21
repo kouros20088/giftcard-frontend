@@ -10,3 +10,20 @@ import Success from './pages/Success.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css';
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/error" element={<ErrorPage />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
