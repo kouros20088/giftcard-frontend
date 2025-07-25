@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function Footer() {
-  return <footer>© 2025 GiftCard Crypto Exchange</footer>;
-}
+const Footer = () => (
+  <footer>
+    <p>&copy; {new Date().getFullYear()} GiftCardSwap. All rights reserved.</p>
+  </footer>
+);
+
+export default Footer;

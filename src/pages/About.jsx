@@ -1,10 +1,1 @@
-import React from 'react';
-
-const About = () => (
-  <div className="page">
-    <h1>About FlashCrypto</h1>
-    <p>We offer a fast, anonymous, and secure way to convert your gift cards to cryptocurrency. No sign-up required. For alternative options message us on telegram!</p>
-  </div>
-);
-
-export default About;
+import React from 'react'; const About = () => <div className='page'><h2>About Us</h2></div>; export default About;
